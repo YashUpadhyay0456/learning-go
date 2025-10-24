@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 func main (){
 	//fmt.Println("Hello, World!");
 	fmt.Print("go"+"lang\n");
@@ -53,5 +56,47 @@ func main (){
 		fmt.Println("index:", index, "value:", value);
 	}
 
+	//switch case
+	// no need to put break statement
+	fmt.Println("Switch Case:");
+	data := 2
+	switch data {
+	case 1:
+		fmt.Println("Data is 1");
+	case 2:
+		fmt.Println("Data is 2");
+	case 3:
+		fmt.Println("Data is 3");
+	default:
+		fmt.Println("Data is unknown");
+	}
+
+	// there is no ternary operator in go
+
+	// multiple condition switch 
+	switch time.Now().Weekday(){
+	case time.Saturday, time.Sunday:
+		fmt.Println("It's the weekend");
+	default:
+		fmt.Println("It's a weekday");	
+	}
+	fmt.Println(time.Now());
+
+	// type switch
+	whoAmI := func (i interface{})  {
+		switch t :=i.(type) {
+		case int:
+			fmt.Println("I'm an int");
+		case string:
+			fmt.Println("I'm a string");
+		default:
+			fmt.Printf("Don't know type %T\n", t);
+		}
+	}
+
+	whoAmI(42);
+	whoAmI("hello");
+	whoAmI(3.14);	
 
 }			
+	
