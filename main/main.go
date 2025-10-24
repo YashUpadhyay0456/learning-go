@@ -34,5 +34,24 @@ func main (){
 		fmt.Println("a =", a);
 	} 
 
+	for a := 10 ; a>0 ; a--{
+		if(a == 2){
+			break;
+		}
+		if (a == 5) {
+			continue;
+		}
+		fmt.Println(a);
+	}
+
+	//for range 
+	fmt.Println("For Range:");
+	for  r := range 10{
+		fmt.Println(r);
+	}
+	for index , value := range  []string{"Go", "is", "awesome"} {
+		fmt.Println("index:", index, "value:", value);
+	}
+
 
 }			
