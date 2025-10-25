@@ -29,5 +29,9 @@ func main() {
 	fmt.Println(empty)
 	delarr := [5]int{1, 2, 3, 4, 5}
 	fmt.Print(delarr)
-
+	/*
+	arrays are used when fixed size is requred 
+	constant time access
+	memory optimizarion
+	*/
 }
