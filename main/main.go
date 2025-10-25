@@ -8,7 +8,7 @@ import (
 func main() {
 	//fmt.Println("Hello, World!");
 	fmt.Print("go" + "lang\n")
-	fmt.Println("1+1 =", 1+1, "\n")
+	fmt.Println("1+1 =", 1+1)
 	fmt.Println("0.7/0.3=", 0.7/0.3)
 	fmt.Println(true && false)
 
